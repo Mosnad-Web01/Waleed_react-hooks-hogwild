@@ -1,5 +1,7 @@
-test("Test passing", () => {
-  return new Promise((resolve, reject) => {
+// app.test.js
+test("passing", async () => {
+  const result = await new Promise((resolve) => {
     resolve(true);
   });
+  expect(result).toBe(true);
 });
